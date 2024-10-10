@@ -1,0 +1,17 @@
+@import '../../core-ui/_base'
+
+// FOOTER
+.footer
+    padding: 6rem 1rem
+    justify-content: center
+    display: flex
+    flex-direction: row
+    background-color: $darkgray // Use the variable from your _base file
+
+    a
+        font-family: $title-font // Use the variable from your _base file
+        color: $white // Use the variable from your _base file
+        opacity: 0.6 // Slightly increased opacity for better visibility
+        transition: opacity 0.3s ease // Add a transition for hover effect
+        &:hover
+            opacity: 1 // Full opacity on hover
