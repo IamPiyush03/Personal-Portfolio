@@ -90,8 +90,8 @@ This project uses **EmailJS** to handle the contact form. You need to configure 
 
 If you have any questions or need help with the project, feel free to reach out:
 
-- **Email**: [your-email@example.com](mailto:piyushdhondge03@gmail.com)
-- **GitHub**: [Your GitHub Profile](https://github.com/IamPiyush03)
+- **Email**: [piyushdhondge03@gmail.com](mailto:piyushdhondge03@gmail.com)
+- **GitHub**: [https://github.com/IamPiyush03](https://github.com/IamPiyush03)
 
 ---
 
