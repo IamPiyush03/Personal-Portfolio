@@ -37,7 +37,7 @@ This project is a **personal portfolio** website built with **React.js** and sty
 
 ### Live Demo
 
-You can view the live demo of this project [here](https://vercel.live/link/personal-protfolio-drab.vercel.app).
+You can view the live demo of this project [here](https://personal-protfolio-drab.vercel.app/).
 
 ---
 
