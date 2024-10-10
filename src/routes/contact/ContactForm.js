@@ -1,6 +1,5 @@
 import { useState } from "react";
-import emailjs from 'emailjs-com'; // Import EmailJS
-import emailjsConfig from "../../../config/emailjsConfig";
+import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
   const [formValues, setFormValues] = useState({ fullname: "", email: "", message: "" });
@@ -45,15 +44,19 @@ const ContactForm = () => {
     setFormErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      // Sending the form data using EmailJS
-      emailjs.sendForm('serviceID', 'templateID', e.target, 'userID')
-        .then((result) => {
-          console.log(result.text);
-          setSubmit(true);
-          setFormValues({ fullname: "", email: "", message: "" }); // Reset the form values
-        }, (error) => {
-          console.log(error.text);
-        });
+      // Use environment variables to send form data via EmailJS
+      emailjs.sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
+        e.target, 
+        process.env.REACT_APP_EMAILJS_USER_ID
+      ).then((result) => {
+        console.log(result.text);
+        setSubmit(true);
+        setFormValues({ fullname: "", email: "", message: "" }); // Reset the form values
+      }, (error) => {
+        console.log(error.text);
+      });
     }
   };
 
@@ -113,5 +116,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
-
