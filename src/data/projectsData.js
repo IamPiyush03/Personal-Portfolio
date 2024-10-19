@@ -1,5 +1,6 @@
 import SortingVisualizerImg from "../assets/images/portfolio/SortingVisualizer.png";
 import FlavorFleetImg from "../assets/images/portfolio/FlavorFleet.png";
+import CryptoPortfolioImg from "../assets/images/portfolio/CryptoPortfolioImg.png"
 
 const projectsData = [
   {
@@ -21,6 +22,16 @@ const projectsData = [
     source: "https://github.com/IamPiyush03/FlavorFleet",
     description:
       "FlavorFleet is a full-stack web application for online food ordering. The platform features user registration, menu filtering, cart management, and a secure checkout process. It efficiently handles both frontend and backend tasks using the MERN stack, offering a seamless user experience.",
+  },
+  {
+    id: "crypto-portfolio",
+    img: CryptoPortfolioImg, // Ensure to import the image at the top of your file
+    name: "Crypto Portfolio",
+    stack: ["< React.js />", "< Chakra UI />", "< Axios />", "< CoinGecko API />"],
+    src: "https://github.com/IamPiyush03/Crypto-Portfolio",
+    source: "https://github.com/IamPiyush03/Crypto-Portfolio",
+    description:
+      "Crypto Portfolio is a web-based application that allows users to track their cryptocurrency investments in real time. Users can view live prices, market data, and detailed information about various cryptocurrencies, making it easier to manage their digital assets.",
   }
 ];
 

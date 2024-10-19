@@ -21,9 +21,6 @@ const ProjectsPreview = () => {
               ))}
             </section>
             <section className="projects-grid__links">
-              <a href={project.src} target="_blank" rel="noreferrer">
-                <img src={ExternalLink} alt="Link to project" />
-              </a>
               <a href={project.source} target="_blank" rel="noreferrer">
                 <img src={GithubRepo} alt="Link to Github" />
               </a>
