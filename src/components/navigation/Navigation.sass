@@ -51,7 +51,7 @@
         height: 100%
         position: fixed
         top: 0
-        background-color: transparent // Ensure transparency for animated background
+        background-color: transparent // Ensure transparency for animated background in desktop view
         z-index: 99
 
     .navigation__menu.active_v
@@ -93,6 +93,23 @@
             width: 1.5rem
             height: 1.5rem
             max-width: 100%
+
+    // Responsive Design for Tablets and Mobile Screens
+    @media (max-width: $md-width) // Tablets (768px) and below
+        .navigation__menu
+            background-color: $black-bg // Black background when menu is opened on smaller screens
+            width: 100% // Full-width menu
+            height: 100vh // Take the entire viewport height for mobile
+            top: 0
+            left: 0
+            right: 0
+            position: fixed
+            z-index: 999 // Ensure the menu is above other content
+
+        .menu-icon
+            display: flex // Keep the menu icon visible on smaller screens
+            width: 2.5rem
+            height: 2.5rem
 
     @media (min-width: $lg-width)
         .navigation__menu
